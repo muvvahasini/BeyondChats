@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.task-manager {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.task-section {
+  margin: 20px 0;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task.high {
+  border-left: 5px solid #dc3545;
+}
+
+.task.medium {
+  border-left: 5px solid #ffc107;
+}
+
+.task.low {
+  border-left: 5px solid #28a745;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.add-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .task-input {
+    flex-direction: column;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Responsive Layouts */
+
+/* Large Desktop */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  form {
+    width: 600px;
+  }
+
+  button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Layout */
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    margin:10px;
+  }
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  input, textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+.size{
+  width:36%;
+}
+
+.google-container-main{
+  display: flex;
+  flex-direction:row ;
+  justify-content: center;
+}

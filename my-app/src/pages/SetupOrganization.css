@@ -1,0 +1,517 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  padding: 20px;
+}
+
+.container {
+  max-width:60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin:10px;
+}
+
+.completed-setup {
+  text-align: center;
+}
+
+.completed-setup h2 {
+  color: green;
+  font-size: 2rem;
+}
+
+.reset-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.container-secondary{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reset-btn:hover {
+  background-color: darkred;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  border:1px solid #ece8e8 ;
+  border-radius:10px;
+  margin:10px;
+  padding:20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-field, .textarea-field {
+  width:80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor:pointer;
+  margin:10px;
+}
+
+.textarea-field {
+  height: 120px;
+  width: 50%;
+}
+
+.fetch-btn, .submit-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin:20px;
+}
+
+.fetch-btn:hover, .submit-btn:hover {
+  background-color: #2563eb;
+}
+
+.meta-description {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+}
+
+.scraping-status {
+  margin-top: 30px;
+  width: 50%;
+}
+
+.webpage-status {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin:10px;
+}
+
+.status.scraped {
+  background-color: green;
+  margin:10px;
+}
+
+.status.pending {
+  background-color: yellow;
+  color: black;
+  margin:10px;
+}
+
+.status.loading {
+  background-color: blue;
+  margin:10px;
+}
+
+.data-chunks ul {
+  padding-left: 20px;
+  margin:10px;
+}
+
+.data-chunks li {
+  margin-bottom: 5px;
+  margin:10px;
+}
+
+.chatbot-btn, .next-step-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin:10px;
+}
+
+.chatbot-btn:hover, .next-step-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .input-field, .textarea-field {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .input-field, .textarea-field {
+    padding: 6px;
+  }
+
+  .reset-btn, .fetch-btn, .submit-btn, .chatbot-btn, .next-step-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* General styles (Mobile-first) */
+
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.completed-setup {
+  text-align: center;
+}
+
+.completed-setup h2 {
+  color: green;
+  font-size: 2rem;
+}
+
+.reset-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: darkred;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin:10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  margin:10px;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin:10px;
+}
+
+.textarea-field {
+  height: 120px;
+  margin:10px;
+}
+
+.fetch-btn, .submit-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin:10px;
+}
+
+.fetch-btn:hover, .submit-btn:hover {
+  background-color: #2563eb;
+}
+
+.meta-description {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+}
+
+.scraping-status {
+  margin-top: 30px;
+  margin:10px;
+}
+
+.webpage-status {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin:10px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin:10px;
+}
+
+.status.scraped {
+  background-color: green;
+  margin:10px;
+}
+
+.status.pending {
+  background-color: yellow;
+  color: black;
+  margin:10px;
+}
+
+.status.loading {
+  background-color: blue;
+  margin:10px;
+}
+
+.data-chunks ul {
+  padding-left: 20px;
+  margin:10px;
+}
+
+.data-chunks li {
+  margin-bottom: 5px;
+}
+
+.chatbot-btn, .next-step-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-btn:hover, .next-step-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin:10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .input-field, .textarea-field {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .input-field, .textarea-field {
+    padding: 6px;
+  }
+
+  .reset-btn, .fetch-btn, .submit-btn, .chatbot-btn, .next-step-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Laptop / Medium devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 50%;
+    padding: 30px;
+    margin:20px;
+  }
+
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+    width:50%;
+    margin:10px;
+  }
+
+  .form-group {
+    width: 48%;
+    margin:10px;
+  }
+
+  .input-field, .textarea-field {
+    padding: 12px;
+    margin:10px;
+  }
+
+  .reset-btn, .fetch-btn, .submit-btn, .chatbot-btn, .next-step-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .meta-description {
+    margin-top: 20px;
+    padding: 12px;
+  }
+
+  .scraping-status .webpage-status {
+    padding: 25px;
+    margin:10px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .submit-btn{
+    width: 40%;
+  }
+}
+
+/* Warning message */
+.warning-message {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 15px;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.close-warning-btn {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.close-warning-btn:hover {
+  background-color: #ec971f;
+}
+
+.nxt-btn{
+  margin:10px;
+  color:#f4f7fb;
+  background-color: rgb(2, 127, 44);
+  padding:10px;
+  border:none;
+  outline: none;
+  border-radius:5px;
+}
+
+/* Other button and form styles as previously defined */
+
+/* Google Authentication Button Style */
+/* Styles for UserRegistration.js */
+.user-registration-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.google-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-box {
+  display: inline-block;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  background-color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.google-box:hover {
+  transform: scale(1.05);
+}
