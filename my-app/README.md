@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# User Registration and Chatbot Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a user registration flow, company setup, and chatbot integration for websites. The system allows users to register using an email or Google authentication, verify their email, and configure their organization’s details, including company information. It also allows users to train a chatbot with scraped data from their website, test the chatbot, and integrate it into their website seamlessly.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. User Registration
+- **Name, Email & Password Input:** User can enter their name, email, and password to register.
+- **Google Authentication:** Users can choose to "Continue with Google" for easy registration.
+- **Email Verification:** An email verification code is sent to ensure genuine registrations.
 
-### `npm start`
+### 2. Setup Organization
+- **Company Details:**
+  - Company Name
+  - Website URL
+  - Company Description
+- **Meta Description Fetching (Bonus):** The system automatically fetches the meta-description from the company's website URL.
+- **Website Scraping & Chatbot Training:**
+  - The system scrapes the company’s website to auto-train the chatbot in the background.
+  - Displays all detected webpages with their scraping status: scraped, pending, or failed.
+  - Users can click on any webpage to view the scraped data chunks.
+- Users can choose to wait for chatbot training completion or move to the next setup step.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Chatbot Integration & Testing
+- **Test Chatbot Button:**
+  - Opens the client's website with a dummy chatbot integration on the bottom right corner.
+  - A topbar displays: “Chatbot not working as intended? Share feedback.”
+- **Integration Instructions:**
+  - Easy-to-follow instructions are provided for copying a dummy code snippet into the `<head>` of the client’s website to integrate the chatbot.
+  - Alternatively, users can choose to mail the integration instructions to the client’s developer.
+- **Test Integration Button:**
+  - Opens a screen with a success UI (e.g., confetti or other success animations) to confirm the integration.
+  - After successful integration, users see options to:
+    - **Explore Admin Panel**
+    - **Start talking to your chatbot**
+    - **Social media sharing buttons**
+    - **You can share the link to whats app , facebook, twitter, linkedin.**
+- If the integration cannot be detected, an alternate UI is displayed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+the details stored in local host
 
-### `npm test`
+1. Clone the repository:
+   
+   ## git clone <repository-url>
+   ## cd <project-directory>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+   ### npm install
+3. Start the development server:
 
-### `npm run build`
+   ## npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.Open your browser and go to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ### http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This `README.md` includes:
+- A clear breakdown of the user registration flow and setup process.
+- Details on the chatbot integration features, including testing and success feedback.
+- Setup instructions for the development environment.
+- A suggested folder structure for your components.
