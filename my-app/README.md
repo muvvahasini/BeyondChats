@@ -37,7 +37,7 @@ This project implements a user registration flow, company setup, and chatbot int
     - **You can share the link to whats app , facebook, twitter, linkedin.**
 - If the integration cannot be detected, an alternate UI is displayed.
 
-the details stored in local host
+the details stored in local storage
 
 1. Clone the repository:
    
